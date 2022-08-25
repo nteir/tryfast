@@ -10,6 +10,9 @@ fastapi = "^0.80.0"
 uvicorn = "^0.18.3"
 psycopg2-binary = "^2.9.3"
 python-dotenv = "^0.20.0"
+SQLAlchemy = "^1.4.40"
+FastAPI-SQLAlchemy = "^0.2.1"
+alembic = "^1.8.1"
 
 [tool.poetry.dev-dependencies]
 
