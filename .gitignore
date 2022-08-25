@@ -1,0 +1,5 @@
+__pycache__
+*.pyc
+*.http
+.venv/
+.env
