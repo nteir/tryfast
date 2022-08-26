@@ -8,4 +8,4 @@ OR
 
 ```make rebuild```
 
-API documentation: http://localhost/docs
+API documentation will be at http://localhost/docs
