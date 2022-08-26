@@ -17,6 +17,11 @@ app.add_middleware(DBSessionMiddleware, db_url=os.environ['DATABASE_URL'])
 async def root():
     return {"message": "Hello World"}
 
+@app.get('/book/')
+def get_books():
+    books = db.session.query(BookModel).all()
+    return books
+
 @app.post('/book/', response_model=BookSchema)
 def add_book(book: BookSchema):
     db_book = BookModel(
